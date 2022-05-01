@@ -1,0 +1,20 @@
+{
+  "exclude": ["dist"],
+  "include": ["**/*.ts"],
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@utils": ["utils/index.ts"],
+      "@core": ["core/index.ts"],
+      "@contracts": ["contracts/index.ts"],
+      "@modules": ["modules/index.ts"]
+    },
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist"
+  },
+  "lib": ["es2015"]
+}
